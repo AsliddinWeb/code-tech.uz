@@ -1,0 +1,63 @@
+{% load static %}
+
+<footer class="footer-section-three">
+  <div class="container footer-container position-relative z-1">
+    <div class="lines position-absolute d-none d-xl-flex justify-content-between w-100 top-0 bottom-0 z-n1">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widget logo">
+          <a href="/">
+            <img src="{% static 'assets/img/logo/logo.svg' %}" alt="logo" />
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widget pages">
+          <h4 class="footer-title">Sahifalar</h4>
+          <ul class="list-unstyled">
+            <li><a href="/home">Bosh sahifa</a></li>
+            <li><a href="/about">Biz haqimizda</a></li>
+            <li><a href="/services">Xizmatlar</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Kontaktlar</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widget">
+          <h4 class="footer-title">Qo'shimcha</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Telegram kanal</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="footer-widget address">
+          <h4 class="footer-title">Aloqa</h4>
+          <p>Qarshi shahri!</p><br/>
+          <p>📞 +998 (94) 202-55-11</p>
+          <p>📞 +998 (99) 416-41-12</p>
+          <div class="footer-social-icon">
+            <a href="#"><img src="{% static 'assets/img/icons/footer-icon-1.svg' %}" alt="footer-icon" /></a>
+            <a href="#"><img src="{% static 'assets/img/icons/footer-icon-2.svg' %}" alt="footer-icon" /></a>
+            <a href="#"><img src="{% static 'assets/img/icons/footer-icon-3.svg' %}" alt="footer-icon" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p>© 2023-2025 Barcha huquqlar himoyalangan. <b>"CODE-TECH" Group</b>!</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,108 @@
+{% load static %}
+
+<div id="header-fixed-height"></div>
+<header class="header-section w-100" id="sticky-header">
+  <nav class="navbar p-0 navbar-expand-xl d-none d-xl-flex">
+    <div class="container px-0">
+      <a class="navbar-brand" href="/">
+        <img src="{% static 'assets/img/logo/logo.svg' %}" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/home">
+              <span>Bosh sahifa</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">
+              <span>Biz haqimizda</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services">
+              <span>Xizmatlar</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/portfolio">
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">
+              <span>Kontaktlar</span>
+            </a>
+          </li>
+        </ul>
+        <div class="join-with-us">
+          <a href="tel:+998942025511" class="join-with-us-btn">📞 (94) 202-55-11</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- mobile navbar start -->
+  <div class="mobile-menu-area d-block d-xl-none">
+    <div class="mobile-topbar">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a href="/">
+              <img src="{% static 'assets/img/logo/logo.svg' %}" alt="logo" />
+            </a>
+          </div>
+          <div class="bars">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu-main">
+      <div class="logo">
+        <a href="/">
+          <img src="{% static 'assets/img/logo/logo.svg' %}" alt="logo" />
+        </a>
+      </div>
+      <div class="close-mobile-menu"><i class="fas fa-times"></i></div>
+      <div class="menu-body">
+        <div class="menu-list">
+          <ul class="list-unstyled">
+            <li>
+              <a href="/home">Bosh sahifa</a>
+            </li>
+            <li>
+              <a href="/about">Biz haqimizda</a>
+            </li>
+            <li>
+              <a href="/services">Xizmatlar</a>
+            </li>
+            <li>
+              <a href="/portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="/contact">Kontaktlar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="join-with-us text-center my-4">
+        <a href="tel:+998942025511" class="join-with-us-btn text-decoration-underline">📞 (94) 202-55-11</a>
+      </div>
+    </div>
+  </div>
+  <!-- mobile navbar end -->
+
+</header>

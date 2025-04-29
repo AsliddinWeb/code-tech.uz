@@ -53,6 +53,7 @@ INSTALLED_APPS = [
 
     # Local APPS
     'settings_app',
+    'home_app',
 ]
 
 MIDDLEWARE = [
@@ -78,6 +79,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                # Settings processors
+                'settings_app.context_processors.seo_settings',
+                'settings_app.context_processors.site_settings',
+                'settings_app.context_processors.social_networks',
+                'settings_app.context_processors.telegram_bot_config',
             ],
         },
     },
@@ -132,7 +139,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '../static/')
+STATIC_ROOT = os.path.join(BASE_DIR, '../staticfiles/')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, '../static'),
+]
 
 # Media settings
 MEDIA_URL = 'media/'

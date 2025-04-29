@@ -9,7 +9,8 @@ settings_app/__pycache__/
 
 db.sqlite3
 media/
-staticfiles/
+
+static/
 env/
 venv/
 .venv/
